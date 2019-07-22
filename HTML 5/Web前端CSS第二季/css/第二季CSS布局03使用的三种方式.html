@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 内嵌 样式表 -->
+    
+    <!-- <style>
+        p{
+            width: 200px;
+            height: 100px;
+            margin: 40px auto;
+            background-color: lightblue;
+            color: navy;
+            font-size: 15px;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+    
+    </style> -->
+    <!-- 引入外部样式表 -->
+    <link type="text/css" rel="stylesheet"
+     href="./css/basic.css"> 
+</head>
+<body>
+    <p style="width: 600px; height:400px; background: navy;
+    color: lightblue; font-size: 40px;text-align:center;
+    line-height: 400px;margin: auto;">内联样式</p>
+
+    <p>内嵌一</p>
+    <p>内嵌2</p>
+    <p>内嵌3</p>
+
+</body>
+</html>
+<!-- 第一种内联样式表 在标签中吧CSS的值卸载style属性中 此种做法不推荐
+不推荐的原因 多个相同的style就要写多遍，代码量大，没有实现标签与CSS分离。
+
+第二种：内嵌样式表：把CSS样式表写在head标签中
+第三种：外部样式表：把CSS存在单独的CSS文件夹中
+在HTML中link相应的CSS文件即可
+-->
