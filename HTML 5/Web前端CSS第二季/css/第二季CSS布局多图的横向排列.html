@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多图的横向排列</title>
+    <style>
+        body{
+            margin: 0px;
+
+        }
+        .course{
+            width: 2400px;
+            height: 600px;
+            line-height: 600px;
+            background-color: white;
+            margin: auto;
+        }
+        .course>.item{
+            float: left;
+            margin-right: 20px;
+
+        }
+        .course>.item:last-child{
+            margin-right: 0px;
+        }
+        .course>.item>.img{
+            width: 560px;
+            height: 310px;
+        }
+        .course>.item>.title{
+            width: 560px;
+            height: 50px;
+            background-color:gray;
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid lightblue;
+            box-sizing: border-box;
+        }
+        .course>.item>.title:hover{
+            background-color:aliceblue;
+            font-weight: bold;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="course">
+            <div class="item">
+                    <div class="img"><img src="image/CSS特效.png"></div>
+                    <div class="title">Web前端开发第三季：CSS特效</div>
+            </div>
+            <div class="item">
+                    <div class="img"><img src="image/CSS.png"></div>
+                    <div class="title">Web前端开发第二季：CSS布局</div>
+            </div>
+            <div class="item">
+                    <div class="img"><img src="image/html.png"></div>
+                    <div class="title">Web前端开发第一季：HTML</div>
+            </div>
+            <div class="item">
+                    <div class="img"><img src="image/JavaScript.png"></div>
+                    <div class="title">Web前端开发第四季：JavaScript</div>
+            </div>
+    </div>
+        
+           
+
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.header{
+    width: 1200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+
+
+}
+.nav{
+    width: 1200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+    
+
+}
+.bigimg{
+    width: 1200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+    
+
+}
+.content{
+    width: 1200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+    
+
+}
+.footer{
+    width: 1200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+    
+
+}

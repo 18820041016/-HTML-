@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0px;
+        padding: 0px;
+
+    }
+    .row{
+        width: 1200px;
+        height: 300px;
+        margin: auto;
+        background-color: lightblue;
+    }
+    .row>div{
+        width: 200px;
+        height: 200px;
+        /* 盒子横向排列 */
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <div class="row">
+            <div>11</div>
+            <div>22</div>
+            <div>33</div>
+    </div>
+     <div class="row">
+            <div>44</div>
+            <div>55</div>
+    </div>
+</body>
+</html>
+<!-- 
+    在默认情况下所有得盒子都是纵向排列
+如果盒子没有指定宽度和高度，默认情况下，盒子间有5px的空隙
+如果希望盒子横向排列，就设置float属性
+现在需求：上面三个在一行，下面两个在另外一行
+分析  两行  纵向三个
+
+
+ -->
