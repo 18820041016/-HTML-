@@ -3,43 +3,178 @@
     padding: 0px;
 
 }
+/* 首页标题 */
 .header{
     width: 1200px;
-    height: 200px;
-    background-color: lightblue;
+    height: 120px;
+    background-color: #FFFFFF;
     margin: auto;
+    padding-top: 15px;
+    box-sizing: border-box;
 
 
 }
+/* 导航栏 */
 .nav{
     width: 1200px;
-    height: 200px;
-    background-color: lightblue;
+    height: 30px;
+    background-color: #4B4B4B;
     margin: auto;
+    
+   
     
 
 }
+/* li元素的属性定义 */
+.nav>ul>li{
+   
+    /* 没有列表序号 */
+    list-style: none;
+  
+}
+.nav>ul>li>a{
+     /* 文字设置为块状 */
+     display: block;
+    /* 标签导航栏的宽度 */
+     width: 150px;
+        /* 标签导航栏的高度 */
+     height: 30px;
+          /* 横向排列 */
+     float: left;
+     text-decoration: none;
+     /* 去除A标签的横线 */
+       /* 文字居中 */
+     text-align: center;
+     
+       /* 字体颜色 */
+     color:#FFFFFF;
+     
+     /* 行高 */
+     line-height: 30px;
+     /* 字体大小 */
+     font-size: 12px;
+     /* 字体加粗 */
+     /* font-weight: bold; */
+     box-sizing: border-box;
+ 
+}
+.nav>ul>li>a:hover{
+   background-color: #0099ff;
+   font-size: 14px;
+   border-left: 5px;
+   border-right: 5px;
+   
+
+}
+/* 首页大图 */
 .bigimg{
-    width: 1200px;
-    height: 200px;
-    background-color: lightblue;
+    width: 1691px;
+    height: 391px;
+    background-color:#FFFFFF;
     margin: auto;
+
     
 
 }
+.bugimg{
+    position: relative;
+    /* 绝对定位的父容器必须指定 */
+}
+.bugimg>.news{
+    width: 209px;
+    height: 209px;
+    position: absolute;
+    left: 160px;
+    top: 100px;
+    background-color:navy;
+    /* 绝对的位置大概是多少 */
+}
+/* 页面内容 */
 .content{
     width: 1200px;
-    height: 200px;
-    background-color: lightblue;
+    height: 395px;
+    background-color:#FFFFFF;
     margin: auto;
+    
     
 
 }
+.content>div{
+    float: left;
+}
+.content>.left{
+    width: 250px;
+    height: 395px;
+}
+.content>.left>ul>li{
+    /* 去除列表的编号 */
+    list-style: none;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    /* 字体居中 */
+    color: #FFFFFF;
+    margin:5px 0px;
+    background-color: #2B2C3B;
+    font-size: 14px;
+    /* 设置圆角 */
+    border-radius: 15px;
+}
+.content>.left>ul>li:hover{
+    background-color: #0099ff;
+    font-size: 16px;
+
+}
+.content>.right{
+    padding: 30px;
+    width: 950px;
+    height: 400px;
+    box-sizing: border-box;
+}
+.content>.right>h2,h3{
+    text-align: center;
+    margin-bottom:20px;
+}
+.content>.right>p{
+    /* 设置每段字体开头间隔30 */
+    text-indent: 30px;
+    /* 设置段落两端对齐 */
+    text-align: justify;
+    /* 设置字体大小 */
+    font-size: 18px;
+
+}
+.call{
+    position: fixed;
+    right: 5px;
+    top: 40%;
+    /* 添加客服图片滚动不会改变位置 */
+    clear: both;
+    /* 清除格式 */
+}
+/* 页脚 */
 .footer{
     width: 1200px;
-    height: 200px;
-    background-color: lightblue;
+    height: 34px;
+    /* background-color:#2B2C31; */
     margin: auto;
+    /* 字体大小 */
+    font-size: 14px;
+    /* 行高 */
+    line-height: 34px;
     
-
+    /* 文字居中 */
+    text-align: center;
+    /* 字体颜色 */
+    color: gray;
+    /* position: absolute 50%; */
+    /* 展示层次的显示值，越高显示越前面 */
+    z-index: 5;
 }
+/* .bigimg{
+
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+} */
